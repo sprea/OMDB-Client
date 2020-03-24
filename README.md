@@ -6,6 +6,7 @@ Un semplice client scritto in C# che consuma le API REST di [OMDBAPI](http://www
 
 Il progetto ha bisogno del pacchetto nuget [Json.net](https://www.newtonsoft.com/json)
 
+Lo si può installare dalla console di gestione pacchetti tramite questo comando:
 ```
 Install-Package Newtonsoft.Json
 ```
