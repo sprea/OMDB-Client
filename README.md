@@ -1,15 +1,15 @@
 # OMDB-Client
 
-Un semplice client scritto in C# che consuma le API REST di [OMDBAPI](http://www.omdbapi.com/).
+A simple client written in C# that consumes the REST API of [OMDBAPI](http://www.omdbapi.com/).
 
-## Installazione librerie
+## Dependency Installation
 
-Il progetto ha bisogno del pacchetto nuget [Json.net](https://www.newtonsoft.com/json)
+The project needs the nuget package [Json.net](https://www.newtonsoft.com/json).
 
-Lo si può installare dalla console di gestione pacchetti tramite questo comando:
+You can install it from the package management console via this command:
 ```
 Install-Package Newtonsoft.Json
 ```
 
-## Licenza
+## License
 [GPL](https://www.gnu.org/licenses/licenses.it.html)
