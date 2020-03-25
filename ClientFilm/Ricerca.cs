@@ -55,7 +55,7 @@ namespace ClientFilm
         {
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                dataGridView1.Rows.Clear(); //pulisce la tabella
+                dataGridView1.Rows.Clear();
             }
             using (var client = new HttpClient())
             {
@@ -155,7 +155,6 @@ namespace ClientFilm
                                 int num = 1;
                                 for (int i = 0; i < length; i++)
                                 {
-                                    //si inseriscono i dati da array a datagridview
                                     output.Search[i].Year = output.Search[i].Year.Replace("â€“", "-");
                                     dataGridView1.Rows.Add(num.ToString(), output.Search[i].Title, output.Search[i].Year, output.Search[i].Type);
                                     num++;
@@ -177,7 +176,7 @@ namespace ClientFilm
         {
             foreach(DataGridViewRow row in dataGridView1.Rows)
             {
-                dataGridView1.Rows.Clear(); //cancella risultati tabella
+                dataGridView1.Rows.Clear();
             }
         }
 
@@ -188,7 +187,6 @@ namespace ClientFilm
         /// <param name="e">L'istanza <see cref="DataGridViewCellEventArgs"/> contiene i dati della cella selezionata.</param>
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //passa l'id del film all'altra form
             try
             {
                 Dettaglio Details = new Dettaglio();
