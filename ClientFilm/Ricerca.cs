@@ -216,6 +216,12 @@ namespace ClientFilm
             }
         }
 
+
+        /// <summary>
+        /// Metodo per la funzionalità di ricerca tramite tasto invio della tastiera.
+        /// </summary>
+        /// <param name="sender">Oggetto source dell'evento.</param>
+        /// <param name="e">Parametro per l'identificazione del tasto premuto</param>
         private void search_textbox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == (char)13)   //controllo tasto invio per la ricerca
