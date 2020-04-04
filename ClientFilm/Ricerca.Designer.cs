@@ -92,7 +92,7 @@
             this.YearFilter_checkbox.TabIndex = 5;
             this.YearFilter_checkbox.Text = "Filtra per anno";
             this.YearFilter_checkbox.UseVisualStyleBackColor = true;
-            this.YearFilter_checkbox.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.YearFilter_checkbox.CheckedChanged += new System.EventHandler(this.YearFilter_checkbox_CheckedChanged);
             // 
             // TypeFilter_checkbox
             // 
@@ -103,7 +103,7 @@
             this.TypeFilter_checkbox.TabIndex = 4;
             this.TypeFilter_checkbox.Text = "Filtra per tipologia";
             this.TypeFilter_checkbox.UseVisualStyleBackColor = true;
-            this.TypeFilter_checkbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.TypeFilter_checkbox.CheckedChanged += new System.EventHandler(this.TypeFilter_checkbox_CheckedChanged);
             // 
             // DeleteItems_button
             // 
@@ -113,7 +113,7 @@
             this.DeleteItems_button.TabIndex = 3;
             this.DeleteItems_button.Text = "Cancella Elenco";
             this.DeleteItems_button.UseVisualStyleBackColor = true;
-            this.DeleteItems_button.Click += new System.EventHandler(this.button1_Click);
+            this.DeleteItems_button.Click += new System.EventHandler(this.DeleteItems_button_Click);
             // 
             // Year_filter_box
             // 
@@ -198,7 +198,7 @@
             this.search_btn.TabIndex = 1;
             this.search_btn.Text = "Ricerca";
             this.search_btn.UseVisualStyleBackColor = true;
-            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
+            this.search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // Results_box
             // 
@@ -232,7 +232,7 @@
             this.Film_Table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Film_Table.Size = new System.Drawing.Size(796, 463);
             this.Film_Table.TabIndex = 0;
-            this.Film_Table.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.Film_Table.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Film_Table_CellDoubleClick);
             // 
             // Numero
             // 

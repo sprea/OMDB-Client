@@ -51,7 +51,7 @@ namespace ClientFilm
         /// </summary>
         /// <param name="sender">Oggetto source dell'evento.</param>
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
-        private async void search_btn_Click(object sender, EventArgs e)
+        private async void Search_btn_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in Film_Table.Rows)
             {
@@ -172,7 +172,7 @@ namespace ClientFilm
         /// </summary>
         ///<param name = "sender" >Oggetto source dell'evento.</param>
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
-        private void button1_Click(object sender, EventArgs e)
+        private void DeleteItems_button_Click(object sender, EventArgs e)
         {
             foreach(DataGridViewRow row in Film_Table.Rows)
             {
@@ -185,7 +185,7 @@ namespace ClientFilm
         /// </summary>
         /// <param name="sender">Oggetto source dell'evento.</param>
         /// <param name="e">L'istanza <see cref="DataGridViewCellEventArgs"/> contiene i dati della cella selezionata.</param>
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void Film_Table_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
@@ -203,7 +203,7 @@ namespace ClientFilm
         /// </summary>
         /// <param name="sender">Oggetto source dell'evento.</param>
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void YearFilter_checkbox_CheckedChanged(object sender, EventArgs e)
         {
             if(YearFilter_checkbox.Checked == false)
             {
@@ -226,7 +226,7 @@ namespace ClientFilm
         {
             if(e.KeyChar == (char)13)   //controllo tasto invio per la ricerca
             {
-                search_btn_Click(sender, e);
+                Search_btn_Click(sender, e);
             }
         }
 
@@ -235,7 +235,7 @@ namespace ClientFilm
         /// </summary>
         /// <param name="sender">Oggetto source dell'evento.</param>
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void TypeFilter_checkbox_CheckedChanged(object sender, EventArgs e)
         {
             if(TypeFilter_checkbox.Checked == false)
             {
