@@ -53,9 +53,9 @@ namespace ClientFilm
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
         private async void search_btn_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            foreach (DataGridViewRow row in Film_Table.Rows)
             {
-                dataGridView1.Rows.Clear();
+                Film_Table.Rows.Clear();
             }
             using (var client = new HttpClient())
             {
@@ -156,7 +156,7 @@ namespace ClientFilm
                                 for (int i = 0; i < length; i++)
                                 {
                                     output.Search[i].Year = output.Search[i].Year.Replace("â€“", "-");
-                                    dataGridView1.Rows.Add(num.ToString(), output.Search[i].Title, output.Search[i].Year, output.Search[i].Type);
+                                    Film_Table.Rows.Add(num.ToString(), output.Search[i].Title, output.Search[i].Year, output.Search[i].Type);
                                     num++;
                                 }
                             }
@@ -174,9 +174,9 @@ namespace ClientFilm
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach(DataGridViewRow row in dataGridView1.Rows)
+            foreach(DataGridViewRow row in Film_Table.Rows)
             {
-                dataGridView1.Rows.Clear();
+                Film_Table.Rows.Clear();
             }
         }
 
@@ -205,13 +205,13 @@ namespace ClientFilm
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox2.Checked == false)
+            if(YearFilter_checkbox.Checked == false)
             {
-                groupBox5.Enabled = false;
+                Year_filter_box.Enabled = false;
                 filtro_anno = false;
             }else
             {
-                groupBox5.Enabled = true;
+                Year_filter_box.Enabled = true;
                 filtro_anno = true;
             }
         }
@@ -231,14 +231,14 @@ namespace ClientFilm
         /// <param name="e">L'istanza <see cref="EventArgs"/> che contiene i dati dell'evento.</param>
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == false)
+            if(TypeFilter_checkbox.Checked == false)
             {
-                groupBox4.Enabled = false;
+                Type_filter_box.Enabled = false;
                 filtro_tipologia = false;
             }
             else
             {
-                groupBox4.Enabled = true;
+                Type_filter_box.Enabled = true;
                 filtro_tipologia = true;
             }
         }
