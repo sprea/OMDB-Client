@@ -188,6 +188,7 @@
             this.search_textbox.Name = "search_textbox";
             this.search_textbox.Size = new System.Drawing.Size(427, 26);
             this.search_textbox.TabIndex = 0;
+            this.search_textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.search_textbox_KeyPress);
             // 
             // search_btn
             // 

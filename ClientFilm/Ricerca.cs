@@ -216,6 +216,14 @@ namespace ClientFilm
             }
         }
 
+        private void search_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13)   //controllo tasto invio per la ricerca
+            {
+                search_btn_Click(sender, e);
+            }
+        }
+
         /// <summary>
         /// Metodo per il controllo del filtro della tipologia.
         /// </summary>
