@@ -29,283 +29,283 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dettaglio));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.InfoBox = new System.Windows.Forms.GroupBox();
+            this.ProductionCountry_box = new System.Windows.Forms.TextBox();
+            this.Plot_box = new System.Windows.Forms.TextBox();
+            this.Actors_box = new System.Windows.Forms.TextBox();
+            this.Creators_box = new System.Windows.Forms.TextBox();
+            this.MovieDirector_box = new System.Windows.Forms.TextBox();
+            this.Genre_box = new System.Windows.Forms.TextBox();
+            this.Duration_box = new System.Windows.Forms.TextBox();
+            this.ReleaseDate_box = new System.Windows.Forms.TextBox();
+            this.Classification_box = new System.Windows.Forms.TextBox();
+            this.Year_box = new System.Windows.Forms.TextBox();
+            this.Title_box = new System.Windows.Forms.TextBox();
+            this.FilmPoster_label = new System.Windows.Forms.Label();
+            this.FilmPoster = new System.Windows.Forms.PictureBox();
+            this.ProductionCountry_label = new System.Windows.Forms.Label();
+            this.Plot_lable = new System.Windows.Forms.Label();
+            this.Actors_label = new System.Windows.Forms.Label();
+            this.Creators_label = new System.Windows.Forms.Label();
+            this.MovieDirector_label = new System.Windows.Forms.Label();
+            this.Genre_label = new System.Windows.Forms.Label();
+            this.Duration_label = new System.Windows.Forms.Label();
+            this.ReleaseDate_label = new System.Windows.Forms.Label();
+            this.Classification_label = new System.Windows.Forms.Label();
+            this.Year_label = new System.Windows.Forms.Label();
+            this.Title_label = new System.Windows.Forms.Label();
+            this.InfoBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FilmPoster)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // InfoBox
             // 
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(797, 656);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Informazioni";
+            this.InfoBox.Controls.Add(this.ProductionCountry_box);
+            this.InfoBox.Controls.Add(this.Plot_box);
+            this.InfoBox.Controls.Add(this.Actors_box);
+            this.InfoBox.Controls.Add(this.Creators_box);
+            this.InfoBox.Controls.Add(this.MovieDirector_box);
+            this.InfoBox.Controls.Add(this.Genre_box);
+            this.InfoBox.Controls.Add(this.Duration_box);
+            this.InfoBox.Controls.Add(this.ReleaseDate_box);
+            this.InfoBox.Controls.Add(this.Classification_box);
+            this.InfoBox.Controls.Add(this.Year_box);
+            this.InfoBox.Controls.Add(this.Title_box);
+            this.InfoBox.Controls.Add(this.FilmPoster_label);
+            this.InfoBox.Controls.Add(this.FilmPoster);
+            this.InfoBox.Controls.Add(this.ProductionCountry_label);
+            this.InfoBox.Controls.Add(this.Plot_lable);
+            this.InfoBox.Controls.Add(this.Actors_label);
+            this.InfoBox.Controls.Add(this.Creators_label);
+            this.InfoBox.Controls.Add(this.MovieDirector_label);
+            this.InfoBox.Controls.Add(this.Genre_label);
+            this.InfoBox.Controls.Add(this.Duration_label);
+            this.InfoBox.Controls.Add(this.ReleaseDate_label);
+            this.InfoBox.Controls.Add(this.Classification_label);
+            this.InfoBox.Controls.Add(this.Year_label);
+            this.InfoBox.Controls.Add(this.Title_label);
+            this.InfoBox.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InfoBox.Location = new System.Drawing.Point(12, 12);
+            this.InfoBox.Name = "InfoBox";
+            this.InfoBox.Size = new System.Drawing.Size(797, 656);
+            this.InfoBox.TabIndex = 0;
+            this.InfoBox.TabStop = false;
+            this.InfoBox.Text = "Informazioni";
             // 
-            // textBox11
+            // ProductionCountry_box
             // 
-            this.textBox11.Location = new System.Drawing.Point(82, 617);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(408, 30);
-            this.textBox11.TabIndex = 23;
+            this.ProductionCountry_box.Location = new System.Drawing.Point(82, 617);
+            this.ProductionCountry_box.Name = "ProductionCountry_box";
+            this.ProductionCountry_box.ReadOnly = true;
+            this.ProductionCountry_box.Size = new System.Drawing.Size(408, 30);
+            this.ProductionCountry_box.TabIndex = 23;
             // 
-            // textBox10
+            // Plot_box
             // 
-            this.textBox10.Location = new System.Drawing.Point(82, 490);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(709, 121);
-            this.textBox10.TabIndex = 22;
+            this.Plot_box.Location = new System.Drawing.Point(82, 490);
+            this.Plot_box.Multiline = true;
+            this.Plot_box.Name = "Plot_box";
+            this.Plot_box.ReadOnly = true;
+            this.Plot_box.Size = new System.Drawing.Size(709, 121);
+            this.Plot_box.TabIndex = 22;
             // 
-            // textBox9
+            // Actors_box
             // 
-            this.textBox9.Location = new System.Drawing.Point(82, 402);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(408, 82);
-            this.textBox9.TabIndex = 21;
+            this.Actors_box.Location = new System.Drawing.Point(82, 402);
+            this.Actors_box.Multiline = true;
+            this.Actors_box.Name = "Actors_box";
+            this.Actors_box.ReadOnly = true;
+            this.Actors_box.Size = new System.Drawing.Size(408, 82);
+            this.Actors_box.TabIndex = 21;
             // 
-            // textBox8
+            // Creators_box
             // 
-            this.textBox8.Location = new System.Drawing.Point(97, 356);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(393, 30);
-            this.textBox8.TabIndex = 20;
+            this.Creators_box.Location = new System.Drawing.Point(97, 356);
+            this.Creators_box.Name = "Creators_box";
+            this.Creators_box.ReadOnly = true;
+            this.Creators_box.Size = new System.Drawing.Size(393, 30);
+            this.Creators_box.TabIndex = 20;
             // 
-            // textBox7
+            // MovieDirector_box
             // 
-            this.textBox7.Location = new System.Drawing.Point(97, 310);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(393, 30);
-            this.textBox7.TabIndex = 19;
+            this.MovieDirector_box.Location = new System.Drawing.Point(97, 310);
+            this.MovieDirector_box.Name = "MovieDirector_box";
+            this.MovieDirector_box.ReadOnly = true;
+            this.MovieDirector_box.Size = new System.Drawing.Size(393, 30);
+            this.MovieDirector_box.TabIndex = 19;
             // 
-            // textBox6
+            // Genre_box
             // 
-            this.textBox6.Location = new System.Drawing.Point(97, 260);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(393, 30);
-            this.textBox6.TabIndex = 18;
+            this.Genre_box.Location = new System.Drawing.Point(97, 260);
+            this.Genre_box.Name = "Genre_box";
+            this.Genre_box.ReadOnly = true;
+            this.Genre_box.Size = new System.Drawing.Size(393, 30);
+            this.Genre_box.TabIndex = 18;
             // 
-            // textBox5
+            // Duration_box
             // 
-            this.textBox5.Location = new System.Drawing.Point(97, 213);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(393, 30);
-            this.textBox5.TabIndex = 17;
+            this.Duration_box.Location = new System.Drawing.Point(97, 213);
+            this.Duration_box.Name = "Duration_box";
+            this.Duration_box.ReadOnly = true;
+            this.Duration_box.Size = new System.Drawing.Size(393, 30);
+            this.Duration_box.TabIndex = 17;
             // 
-            // textBox4
+            // ReleaseDate_box
             // 
-            this.textBox4.Location = new System.Drawing.Point(172, 166);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(318, 30);
-            this.textBox4.TabIndex = 16;
+            this.ReleaseDate_box.Location = new System.Drawing.Point(172, 166);
+            this.ReleaseDate_box.Name = "ReleaseDate_box";
+            this.ReleaseDate_box.ReadOnly = true;
+            this.ReleaseDate_box.Size = new System.Drawing.Size(318, 30);
+            this.ReleaseDate_box.TabIndex = 16;
             // 
-            // textBox3
+            // Classification_box
             // 
-            this.textBox3.Location = new System.Drawing.Point(172, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(318, 30);
-            this.textBox3.TabIndex = 15;
+            this.Classification_box.Location = new System.Drawing.Point(172, 117);
+            this.Classification_box.Name = "Classification_box";
+            this.Classification_box.ReadOnly = true;
+            this.Classification_box.Size = new System.Drawing.Size(318, 30);
+            this.Classification_box.TabIndex = 15;
             // 
-            // textBox2
+            // Year_box
             // 
-            this.textBox2.Location = new System.Drawing.Point(97, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(393, 30);
-            this.textBox2.TabIndex = 14;
+            this.Year_box.Location = new System.Drawing.Point(97, 73);
+            this.Year_box.Name = "Year_box";
+            this.Year_box.ReadOnly = true;
+            this.Year_box.Size = new System.Drawing.Size(393, 30);
+            this.Year_box.TabIndex = 14;
             // 
-            // textBox1
+            // Title_box
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(393, 30);
-            this.textBox1.TabIndex = 13;
+            this.Title_box.Location = new System.Drawing.Point(97, 29);
+            this.Title_box.Name = "Title_box";
+            this.Title_box.ReadOnly = true;
+            this.Title_box.Size = new System.Drawing.Size(393, 30);
+            this.Title_box.TabIndex = 13;
             // 
-            // label12
+            // FilmPoster_label
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(510, 26);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 22);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Locandina";
+            this.FilmPoster_label.AutoSize = true;
+            this.FilmPoster_label.Location = new System.Drawing.Point(510, 26);
+            this.FilmPoster_label.Name = "FilmPoster_label";
+            this.FilmPoster_label.Size = new System.Drawing.Size(100, 22);
+            this.FilmPoster_label.TabIndex = 12;
+            this.FilmPoster_label.Text = "Locandina";
             // 
-            // pictureBox1
+            // FilmPoster
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(514, 51);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(277, 423);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(277, 423);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 423);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.FilmPoster.Location = new System.Drawing.Point(514, 51);
+            this.FilmPoster.MaximumSize = new System.Drawing.Size(277, 423);
+            this.FilmPoster.MinimumSize = new System.Drawing.Size(277, 423);
+            this.FilmPoster.Name = "FilmPoster";
+            this.FilmPoster.Size = new System.Drawing.Size(277, 423);
+            this.FilmPoster.TabIndex = 11;
+            this.FilmPoster.TabStop = false;
             // 
-            // label11
+            // ProductionCountry_label
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 620);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 22);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Paese";
+            this.ProductionCountry_label.AutoSize = true;
+            this.ProductionCountry_label.Location = new System.Drawing.Point(6, 620);
+            this.ProductionCountry_label.Name = "ProductionCountry_label";
+            this.ProductionCountry_label.Size = new System.Drawing.Size(60, 22);
+            this.ProductionCountry_label.TabIndex = 10;
+            this.ProductionCountry_label.Text = "Paese";
             // 
-            // label10
+            // Plot_lable
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 490);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 22);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Trama";
+            this.Plot_lable.AutoSize = true;
+            this.Plot_lable.Location = new System.Drawing.Point(6, 490);
+            this.Plot_lable.Name = "Plot_lable";
+            this.Plot_lable.Size = new System.Drawing.Size(60, 22);
+            this.Plot_lable.TabIndex = 9;
+            this.Plot_lable.Text = "Trama";
             // 
-            // label9
+            // Actors_label
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 402);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Attori";
+            this.Actors_label.AutoSize = true;
+            this.Actors_label.Location = new System.Drawing.Point(6, 402);
+            this.Actors_label.Name = "Actors_label";
+            this.Actors_label.Size = new System.Drawing.Size(70, 22);
+            this.Actors_label.TabIndex = 8;
+            this.Actors_label.Text = "Attori";
             // 
-            // label8
+            // Creators_label
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 356);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 22);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Ideatori";
+            this.Creators_label.AutoSize = true;
+            this.Creators_label.Location = new System.Drawing.Point(6, 356);
+            this.Creators_label.Name = "Creators_label";
+            this.Creators_label.Size = new System.Drawing.Size(90, 22);
+            this.Creators_label.TabIndex = 7;
+            this.Creators_label.Text = "Ideatori";
             // 
-            // label7
+            // MovieDirector_label
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 310);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Regista";
+            this.MovieDirector_label.AutoSize = true;
+            this.MovieDirector_label.Location = new System.Drawing.Point(6, 310);
+            this.MovieDirector_label.Name = "MovieDirector_label";
+            this.MovieDirector_label.Size = new System.Drawing.Size(80, 22);
+            this.MovieDirector_label.TabIndex = 6;
+            this.MovieDirector_label.Text = "Regista";
             // 
-            // label6
+            // Genre_label
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 263);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 22);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Genere";
+            this.Genre_label.AutoSize = true;
+            this.Genre_label.Location = new System.Drawing.Point(6, 263);
+            this.Genre_label.Name = "Genre_label";
+            this.Genre_label.Size = new System.Drawing.Size(70, 22);
+            this.Genre_label.TabIndex = 5;
+            this.Genre_label.Text = "Genere";
             // 
-            // label5
+            // Duration_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 22);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Durata";
+            this.Duration_label.AutoSize = true;
+            this.Duration_label.Location = new System.Drawing.Point(6, 216);
+            this.Duration_label.Name = "Duration_label";
+            this.Duration_label.Size = new System.Drawing.Size(70, 22);
+            this.Duration_label.TabIndex = 4;
+            this.Duration_label.Text = "Durata";
             // 
-            // label4
+            // ReleaseDate_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Data di uscita";
+            this.ReleaseDate_label.AutoSize = true;
+            this.ReleaseDate_label.Location = new System.Drawing.Point(6, 166);
+            this.ReleaseDate_label.Name = "ReleaseDate_label";
+            this.ReleaseDate_label.Size = new System.Drawing.Size(150, 22);
+            this.ReleaseDate_label.TabIndex = 3;
+            this.ReleaseDate_label.Text = "Data di uscita";
             // 
-            // label3
+            // Classification_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Classificazione";
+            this.Classification_label.AutoSize = true;
+            this.Classification_label.Location = new System.Drawing.Point(6, 117);
+            this.Classification_label.Name = "Classification_label";
+            this.Classification_label.Size = new System.Drawing.Size(160, 22);
+            this.Classification_label.TabIndex = 2;
+            this.Classification_label.Text = "Classificazione";
             // 
-            // label2
+            // Year_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Anno";
+            this.Year_label.AutoSize = true;
+            this.Year_label.Location = new System.Drawing.Point(6, 76);
+            this.Year_label.Name = "Year_label";
+            this.Year_label.Size = new System.Drawing.Size(50, 22);
+            this.Year_label.TabIndex = 1;
+            this.Year_label.Text = "Anno";
             // 
-            // label1
+            // Title_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Titolo";
+            this.Title_label.AutoSize = true;
+            this.Title_label.Location = new System.Drawing.Point(6, 29);
+            this.Title_label.Name = "Title_label";
+            this.Title_label.Size = new System.Drawing.Size(70, 22);
+            this.Title_label.TabIndex = 0;
+            this.Title_label.Text = "Titolo";
             // 
             // Dettaglio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 680);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.InfoBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(837, 719);
@@ -313,39 +313,39 @@
             this.Name = "Dettaglio";
             this.Text = "Dettaglio";
             this.Load += new System.EventHandler(this.Dettaglio_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.InfoBox.ResumeLayout(false);
+            this.InfoBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FilmPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox InfoBox;
+        private System.Windows.Forms.TextBox ProductionCountry_box;
+        private System.Windows.Forms.TextBox Plot_box;
+        private System.Windows.Forms.TextBox Actors_box;
+        private System.Windows.Forms.TextBox Creators_box;
+        private System.Windows.Forms.TextBox MovieDirector_box;
+        private System.Windows.Forms.TextBox Genre_box;
+        private System.Windows.Forms.TextBox Duration_box;
+        private System.Windows.Forms.TextBox ReleaseDate_box;
+        private System.Windows.Forms.TextBox Classification_box;
+        private System.Windows.Forms.TextBox Year_box;
+        private System.Windows.Forms.TextBox Title_box;
+        private System.Windows.Forms.Label FilmPoster_label;
+        private System.Windows.Forms.PictureBox FilmPoster;
+        private System.Windows.Forms.Label ProductionCountry_label;
+        private System.Windows.Forms.Label Plot_lable;
+        private System.Windows.Forms.Label Actors_label;
+        private System.Windows.Forms.Label Creators_label;
+        private System.Windows.Forms.Label MovieDirector_label;
+        private System.Windows.Forms.Label Genre_label;
+        private System.Windows.Forms.Label Duration_label;
+        private System.Windows.Forms.Label ReleaseDate_label;
+        private System.Windows.Forms.Label Classification_label;
+        private System.Windows.Forms.Label Year_label;
+        private System.Windows.Forms.Label Title_label;
     }
 }

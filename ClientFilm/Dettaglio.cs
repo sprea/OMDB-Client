@@ -65,18 +65,18 @@ namespace ClientFilm
                             var result = JsonConvert.DeserializeObject<Rootobjects>(json);
                             output = result;
                             output.Year = output.Year.Replace("â€“", "-");
-                            textBox1.Text = output.Title;
-                            textBox2.Text = output.Year;
-                            textBox3.Text = output.Rated;
-                            textBox4.Text = output.Released;
-                            textBox5.Text = output.Runtime;
-                            textBox6.Text = output.Genre;
-                            textBox7.Text = output.Director;
-                            textBox8.Text = output.Writer;
-                            textBox9.Text = output.Actors;
-                            textBox10.Text = output.Plot;
-                            textBox11.Text = output.Country;
-                            pictureBox1.ImageLocation = output.Poster;
+                            Title_box.Text = output.Title;
+                            Year_box.Text = output.Year;
+                            Classification_box.Text = output.Rated;
+                            ReleaseDate_box.Text = output.Released;
+                            Duration_box.Text = output.Runtime;
+                            Genre_box.Text = output.Genre;
+                            MovieDirector_box.Text = output.Director;
+                            Creators_box.Text = output.Writer;
+                            Actors_box.Text = output.Actors;
+                            Plot_box.Text = output.Plot;
+                            ProductionCountry_box.Text = output.Country;
+                            FilmPoster.ImageLocation = output.Poster;
                         }catch(Exception ex)
                         {
                             MessageBox.Show(ex.Message);
