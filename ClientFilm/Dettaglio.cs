@@ -28,7 +28,7 @@ namespace ClientFilm
         /// <summary>
         /// La chiave API per effettuare le richieste.
         /// </summary>
-        static string ApiKey = "46bd1d1b";
+        const string ApiKey = "46bd1d1b";
         /// <summary>
         /// Le informazioni del film richiesto.
         /// </summary>
