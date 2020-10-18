@@ -5,6 +5,7 @@ using ClientFilm.Models;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Net;
+using System.Text;
 
 namespace ClientFilm
 {
@@ -34,9 +35,9 @@ namespace ClientFilm
         /// </summary>
         Rootobject output = null;
         /// <summary>
-        /// Filtri per la ricerca tipo e anno.
+        /// Variabile che contiene il testo in formato CSV per l'esportazizione.
         /// </summary>
-        string type, year;
+        string csv = "";
         /// <summary>
         /// Variabili di controllo per il filtro tipologia.
         /// </summary>
@@ -70,71 +71,21 @@ namespace ClientFilm
                 {
                     Ricerca = search_textbox.Text;
 
-                    if(filtro_tipologia)
+                    if (filtro_anno && AnnoBox.SelectedIndex == -1)
                     {
-                        if(filtro_anno)
-                        {
-                            if (AnnoBox.SelectedIndex == -1)
-                            {
-                                MessageBox.Show("Compila i campi del filtro", "Errore");
-
-                                query = "errore";
-                            }else
-                            {
-                                year = AnnoBox.SelectedItem.ToString();
-                            }
-                        }else
-                        {
-                            year = null;
-                        }
-
-                        if (filmradio.Checked)
-                        {
-                            type = "movie";
-                        }
-                        else if (serieradio.Checked)
-                        {
-                            type = "series";
-                        }
-
-                        if(String.IsNullOrEmpty(year))
-                        {
-                            query = "?s=" + Ricerca + "&type=" + type + "&apikey=" + ApiKey;
-                        }else
-                        {
-                            query = "?s=" + Ricerca + "&type=" + type + "&y=" + year + "&apikey=" + ApiKey;
-                        }
-                        
-                    }else
+                        MessageBox.Show("Compila i campi del filtro", "Errore");
+                        query = "errore";
+                    } 
+                    else
                     {
-                        if(filtro_anno)
-                        {
-                            if (AnnoBox.SelectedIndex == -1)
-                            {
-                                MessageBox.Show("Compila i campi del filtro", "Errore");
-
-                                query = "errore";
-                            }else
-                            {
-                                year = AnnoBox.SelectedItem.ToString();
-                            }
-                        }else
-                        {
-                            year = null;
-                        }
-                        if (String.IsNullOrEmpty(year))
-                        {
-                            query = "?s=" + Ricerca + "&apikey=" + ApiKey;
-                        }
-                        else
-                        {
-                            query = "?s=" + Ricerca + "&y=" + year + "&apikey=" + ApiKey;
-                        }
+                        query = "?s=" + Ricerca + "&apikey=" + ApiKey;
+                        if (filtro_tipologia)
+                            query += "&type=" + (filmradio.Checked ? "movie" : "series");
+                        if (filtro_anno)
+                            query += "&y=" + AnnoBox.SelectedItem.ToString();
                     }
 
                     AnnoBox.SelectedIndex = -1;
-                    type = null;
-                    year = null;
                     
                     HttpResponseMessage response = await client.GetAsync(query);
 
@@ -142,6 +93,7 @@ namespace ClientFilm
                     {
                         using (WebClient web = new WebClient())
                         {
+                            csv = "";
                             url = "http://www.omdbapi.com/" + query;
                             var json = web.DownloadString(url);
                             var result = JsonConvert.DeserializeObject<Rootobject>(json);
@@ -157,6 +109,7 @@ namespace ClientFilm
                                 {
                                     output.Search[i].Year = output.Search[i].Year.Replace("â€“", "-");
                                     Film_Table.Rows.Add(num.ToString(), output.Search[i].Title, output.Search[i].Year, output.Search[i].Type);
+                                    csv += num.ToString() + ";" + output.Search[i].Title + ";" + output.Search[i].Year + ";" + output.Search[i].Type + "\n";
                                     num++;
                                 }
                             }
@@ -246,6 +199,18 @@ namespace ClientFilm
             {
                 Type_filter_box.Enabled = true;
                 filtro_tipologia = true;
+            }
+        }
+
+        private void ExportCsv_button_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName != "")
+            {
+                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                byte[] bytes = Encoding.UTF8.GetBytes(csv);
+                fs.Write(bytes, 0, bytes.Length);
+                fs.Close();
             }
         }
     }

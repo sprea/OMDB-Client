@@ -48,6 +48,8 @@
             this.NomeFilm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AnnoFilm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoFilm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExportCsv_button = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SearchBox.SuspendLayout();
             this.options_box.SuspendLayout();
             this.Year_filter_box.SuspendLayout();
@@ -73,12 +75,13 @@
             // 
             // options_box
             // 
+            this.options_box.Controls.Add(this.ExportCsv_button);
             this.options_box.Controls.Add(this.YearFilter_checkbox);
             this.options_box.Controls.Add(this.TypeFilter_checkbox);
             this.options_box.Controls.Add(this.DeleteItems_button);
             this.options_box.Location = new System.Drawing.Point(557, 25);
             this.options_box.Name = "options_box";
-            this.options_box.Size = new System.Drawing.Size(272, 175);
+            this.options_box.Size = new System.Drawing.Size(272, 185);
             this.options_box.TabIndex = 7;
             this.options_box.TabStop = false;
             this.options_box.Text = "Opzioni";
@@ -109,7 +112,7 @@
             // 
             this.DeleteItems_button.Location = new System.Drawing.Point(6, 25);
             this.DeleteItems_button.Name = "DeleteItems_button";
-            this.DeleteItems_button.Size = new System.Drawing.Size(260, 71);
+            this.DeleteItems_button.Size = new System.Drawing.Size(260, 38);
             this.DeleteItems_button.TabIndex = 3;
             this.DeleteItems_button.Text = "Cancella Elenco";
             this.DeleteItems_button.UseVisualStyleBackColor = true;
@@ -268,11 +271,26 @@
             this.TipoFilm.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.TipoFilm.Width = 200;
             // 
+            // ExportCsv_button
+            // 
+            this.ExportCsv_button.Location = new System.Drawing.Point(6, 67);
+            this.ExportCsv_button.Name = "ExportCsv_button";
+            this.ExportCsv_button.Size = new System.Drawing.Size(260, 38);
+            this.ExportCsv_button.TabIndex = 6;
+            this.ExportCsv_button.Text = "Esporta CSV";
+            this.ExportCsv_button.UseVisualStyleBackColor = true;
+            this.ExportCsv_button.Click += new System.EventHandler(this.ExportCsv_button_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "File CSV|.csv";
+            this.saveFileDialog1.Title = "Esporta CSV";
+            // 
             // Ricerca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 742);
+            this.ClientSize = new System.Drawing.Size(857, 743);
             this.Controls.Add(this.Results_box);
             this.Controls.Add(this.SearchBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -316,6 +334,8 @@
         private System.Windows.Forms.GroupBox Year_filter_box;
         private System.Windows.Forms.ComboBox AnnoBox;
         private System.Windows.Forms.CheckBox YearFilter_checkbox;
+        private System.Windows.Forms.Button ExportCsv_button;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
