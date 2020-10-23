@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Net;
 using System.Text;
+using System.Configuration;
 
 namespace ClientFilm
 {
@@ -29,13 +30,13 @@ namespace ClientFilm
         /// <summary>
         /// La chiave API per effettuare le richieste.
         /// </summary>
-        const string ApiKey = "46bd1d1b";
+        static string ApiKey = ConfigurationManager.AppSettings["Apikey"];
         /// <summary>
         /// Le informazioni principali del film richiesto.
         /// </summary>
         Rootobject output = null;
         /// <summary>
-        /// Variabile che contiene il testo in formato CSV per l'esportazizione.
+        /// Variabile che contiene il testo in formato CSV per l'esportazione.
         /// </summary>
         string csv = "";
         /// <summary>
@@ -204,13 +205,19 @@ namespace ClientFilm
 
         private void ExportCsv_button_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.ShowDialog();
-            if (saveFileDialog1.FileName != "")
+            if(Film_Table.RowCount > 0)  //se sono stati trovati dei film allora posso esportare un csv
             {
-                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
-                byte[] bytes = Encoding.UTF8.GetBytes(csv);
-                fs.Write(bytes, 0, bytes.Length);
-                fs.Close();
+                saveFileDialog1.ShowDialog();
+                if (saveFileDialog1.FileName != "")
+                {
+                    System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                    byte[] bytes = Encoding.UTF8.GetBytes(csv);
+                    fs.Write(bytes, 0, bytes.Length);
+                    fs.Close();
+                }
+            }else
+            {
+                MessageBox.Show("Ci deve essere almeno 1 film per poter esportare un elenco csv", "Errore");
             }
         }
     }
