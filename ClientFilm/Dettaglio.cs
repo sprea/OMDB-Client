@@ -26,10 +26,6 @@ namespace ClientFilm
         /// </summary>
         public string Omdb_id;
         /// <summary>
-        /// La chiave API per effettuare le richieste.
-        /// </summary>
-        const string ApiKey = "46bd1d1b";
-        /// <summary>
         /// Le informazioni del film richiesto.
         /// </summary>
         Rootobjects output;
@@ -51,7 +47,7 @@ namespace ClientFilm
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 string url;
-                string query = "?i=" + Omdb_id + "&plot=full" + "&apikey=" + ApiKey;
+                string query = "?i=" + Omdb_id + "&plot=full" + "&apikey=" + Program.ApiKey;
                 HttpResponseMessage response = await client.GetAsync(query);
 
                 if (response.IsSuccessStatusCode)

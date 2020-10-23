@@ -28,10 +28,6 @@ namespace ClientFilm
             }
         }
         /// <summary>
-        /// La chiave API per effettuare le richieste.
-        /// </summary>
-        static string ApiKey = ConfigurationManager.AppSettings["Apikey"];
-        /// <summary>
         /// Le informazioni principali del film richiesto.
         /// </summary>
         Rootobject output = null;
@@ -79,7 +75,7 @@ namespace ClientFilm
                     } 
                     else
                     {
-                        query = "?s=" + Ricerca + "&apikey=" + ApiKey;
+                        query = "?s=" + Ricerca + "&apikey=" + Program.ApiKey;
                         if (filtro_tipologia)
                             query += "&type=" + (filmradio.Checked ? "movie" : "series");
                         if (filtro_anno)
